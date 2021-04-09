@@ -37,7 +37,7 @@ header > h1 {
 
 nav {
   background-color: #bd027d;
-  grid-columns: 1 / -1;
+  grid-column: 1 / -1;
   grid-row: 1;
 }
 
@@ -79,7 +79,7 @@ main p {
 }
 
 h2 {
-  margin-bottom: 0 0 1.5rem;
+  margin-bottom: 1.5rem;
   font-family: "PT Sans Narrow", sans-serif;
 }
 
@@ -113,7 +113,7 @@ section h3 {
   font-size: 1.125rem;
   font-family: "PT Sans Narrow", sans-serif;
   z-index: 1;
-  padding: .5rem;
+  padding: 1rem;
 }
 
 section li > img {
@@ -136,16 +136,33 @@ section div {
 
 section div img {
   width: 1em;
-  heightL 1em;
+  height: 1em;
+  margin: .5rem 0;
   margin-right: .5em;
+  background-color: #afafaf;
 }
 
 section div strong {
   font-weight: normal;
+  background-color: #afafaf;
+  margin-top: .5rem;
+  margin-right: .25rem;
 }
 
 section {
   padding: 1.5rem;
   border-bottom: 2px solid #afafaf;
   border-top: 2px solid #afafaf;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: .875rem;
+  align-items: center;
+}
+
+footer a {
+  color: #000;
 }
